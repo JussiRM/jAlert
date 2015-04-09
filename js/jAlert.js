@@ -4,7 +4,7 @@
 /*
  jAlert
  Created by: Jussi Laitinen
- Purpose: Show (non-blocking) message
+ Purpose: Show (non-blocking) message on screen
  */
 
 var jAlert;

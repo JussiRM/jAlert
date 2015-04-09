@@ -11,7 +11,20 @@
 
 <a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', { useCssAnimation: true });">Default jAlert [CSS ANIMATION]</a><br>
 <a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', { useCssAnimation: true, vAlign:'middle' });">Middle jAlert [CSS ANIMATION]</a><br>
-<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', { useCssAnimation: true, vAlign:'top' });">Top jAlert [CSS ANIMATION]</a><br>
+<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', { useCssAnimation: true, vAlign:'top' });">Top jAlert [CSS ANIMATION]</a><br><br>
+
+<h1>How to Use</h1>
+<p><a href="js/jAlert.js">Grab the JS File here</a> and include it somewhere on the page</p>
+<p>Use by calling <i><b>jAlert('text', { options });</b></i></p>
+
+<h2>Options</h2>
+<b>time:</b> time in milliseconds how long the popup should be seen (default: 2000)<br>
+<b>vAlign:</b> 'top', 'middle', or 'bottom'. Where the popup is vertically placed. (default: 'bottom')<br>
+<b>useCssAnimation:</b> If you want to use CSS Animations (smoother), true. (default: false)<br><br>
+
+Eg.<br>
+<i><b>jAlert('this is some text', { time: 1000, vAlign: 'middle', useCssAnimation: true });</b></i><br>
+<a href="#" onclick="jAlert('this is some text', { time: 1000, vAlign: 'middle', useCssAnimation: true });">Results to this</a>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jAlert.js"></script>
