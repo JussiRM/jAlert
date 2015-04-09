@@ -5,7 +5,13 @@
     <title></title>
 </head>
 <body>
-<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', 2000);">Klikkaa tästä</a>
+<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', {  });">Default jAlert</a><br>
+<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna, middle', { vAlign: 'middle' });">jAlert, middle</a><br>
+<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna, top', { vAlign: 'top' });">jAlert, top</a><br><br>
+
+<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', { useCssAnimation: true });">Default jAlert [CSS ANIMATION]</a><br>
+<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', { useCssAnimation: true, vAlign:'middle' });">Middle jAlert [CSS ANIMATION]</a><br>
+<a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', { useCssAnimation: true, vAlign:'top' });">Top jAlert [CSS ANIMATION]</a><br>
 
 <script src="js/jquery.min.js"></script>
 <script src="js/jAlert.js"></script>
