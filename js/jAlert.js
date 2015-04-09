@@ -51,7 +51,7 @@ jAlert.display = function(msg, options) {
 
     //Create container for the info message
     var $container = $('<div></div>');
-    $container.append('<span id="jAlert_msg">' + msg + '</span>');
+    $container.append('<span>' + msg + '</span>');
 
     //Check where to position the popup vertically. f stands for flipper (for bottom start/end to *-1)
     var bottomPx
