@@ -133,7 +133,6 @@ jAlert.display = function(msg, options) {
         });
 
         $($container).bind("transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd", function(){
-            console.log(transitionEndCounter);
             if (transitionEndCounter == 0)
             {
                 window.setTimeout(function() {
