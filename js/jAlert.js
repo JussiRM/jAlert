@@ -22,7 +22,7 @@ jAlert.display = function(msg, options) {
     var useCssAnimation = false;
 
     //Check options
-    if (options !== undefined || typeof options !== object)
+    if (options !== undefined)
     {
         if(options.time !== undefined)
         {
