@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title></title>
 </head>
-<body>
+<body style="margin-left:75px; margin-top:30px;">
 <a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', {  });">Default jAlert</a><br>
 <a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna, middle', { vAlign: 'middle' });">jAlert, middle</a><br>
 <a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna, top', { vAlign: 'top' });">jAlert, top</a><br><br>
@@ -14,7 +14,7 @@
 <a href="#" onclick="jAlert('Tämä on keskitetty jAlert-ilmoitusikkuna', { useCssAnimation: true, vAlign:'top' });">Top jAlert [CSS ANIMATION]</a><br><br>
 
 <h1>How to Use</h1>
-<p><a href="js/jAlert.js">Grab the JS File here</a> and include it somewhere on the page</p>
+<p><a href="js/jAlert.js">Grab the JS File here</a> and include it somewhere on the page. Nothing else needed.</p>
 <p>Use by calling <i><b>jAlert('text', { options });</b></i></p>
 
 <h2>Options</h2>
@@ -26,6 +26,24 @@ Eg.<br>
 <i><b>jAlert('this is some text', { time: 1000, vAlign: 'middle', useCssAnimation: true });</b></i><br>
 <a href="#" onclick="jAlert('this is some text', { time: 1000, vAlign: 'middle', useCssAnimation: true });">Results to this</a>
 
+<h2>Overriding styles</h2>
+<p>Each alert is confined within '<b>jalert-container</b>' class, so you can use it to customize it to your liking</p>
+<p>Default styles (in JS syntax), at least at the time of the writing:</p>
+<pre>
+    position: 'fixed',
+    bottom: bottomPx + 'px',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    maxWidth: '250px',
+
+    backgroundColor: 'rgba(0,0,0, 0.80)',
+    borderRadius: '10px',
+
+    padding: '24px',
+    zIndex: '1000',
+
+    opacity:0
+</pre>
 <script src="js/jquery.min.js"></script>
 <script src="js/jAlert.js"></script>
 </body>
